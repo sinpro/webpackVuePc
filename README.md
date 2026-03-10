@@ -81,18 +81,14 @@ other: 其他工作，如更新配置
 ```
 
 ### 前端模块
-> 1、登录           chb_logon               【登录】
-> 2、首页           chb_homePage            【首页、限时推广】
-> 3、账户           chb_acctManagement      【账户概览、交易记录、电子结单】
-> 4、存款           chb_depositBusiness     【定期存款、利率】
-> 5、转账           chb_transferService     【转账/转数快、转账交易记录、电汇、汇款查询、预约管理】
-> 6、缴费服务       chb_billPayment         【缴费EPSCO、电子账单(EBPP)】
-> 7、外汇           chb_foreignExchange     【外币牌价、外币兑换】
-> 8、投资           chb_investService       【基金、外币挂钩存款、交易记录、投资风险评估、衍生产品知识影片】
-> 9、信用卡         chb_creditCard          【我的信用卡、报失信用卡、网上确认信用卡、申请信用卡、信用额套现分期（透支）-申请、信用额套现分期-递交文件】
-> 10、贷款          chb_loanService         【我的贷款、私人贷款、楼宇贷款、抵押透支服务】
-> 11、设定          chb_mySettings          【转账、海外自动柜员机交易、报失卡、申请支票簿、新增/删除账户、流动保安设定、更改登入密码、更改登入名称、更改联系资料、账户重启】
-> 12、公共页面      chb_commonPage          【404页面、启动网银】
+> 1、登录           bank_logon               【登录】
+> 2、首页           bank_home                【首页】
+> 3、设定           bank_presonall            【设定】
+> 4、公共页面        bank_commonPage            【公共页面】
+> 5、......
+
+
+
 ```删掉模块
 chb_onlineApplication
 chb_promoteService
