@@ -1,0 +1,85 @@
+.bank_commonPage {
+    .not-found {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .error-code {
+        font-size: 120px;
+        font-weight: bold;
+        line-height: 1;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .error-title {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+
+    .error-message {
+        font-size: 16px;
+        opacity: 0.9;
+        margin-bottom: 30px;
+    }
+
+    .actions {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn-home,
+    .btn-back {
+        padding: 12px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: all 0.3s;
+        cursor: pointer;
+        border: none;
+    }
+
+    .btn-home {
+        background: white;
+        color: #667eea;
+    }
+
+    .btn-home:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-back {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+
+    .btn-back:hover {
+        background: white;
+        color: #667eea;
+    }
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+}

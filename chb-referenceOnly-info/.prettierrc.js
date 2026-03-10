@@ -1,0 +1,10 @@
+{
+    "singleQuote": true,
+    "disableLanguages": [
+        "vue"
+    ],
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "endOfLine": "auto",
+    "prettier.ignorePath": ".prettierignore"
+}
