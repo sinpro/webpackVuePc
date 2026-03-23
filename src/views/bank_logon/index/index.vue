@@ -10,7 +10,15 @@
     <!-- 业务功能在此开发 -->
     <div class="bank_logon_content">
       <bank-layout>
-        1111<br><br><br><br><br><br>
+        <div>
+          <button @click="startVerify">开始验证</button>
+          <Vcode
+            :show="isShow"
+            @success="onSuccess"
+            @close="onClose"
+          />
+        </div>
+        <!-- 1111<br><br><br><br><br><br>
         22222<br><br><br><br><br><br>
         33333<br><br><br><br><br><br>
         44444<br><br><br><br><br><br>
@@ -19,7 +27,7 @@
         777777<br><br><br><br><br><br>
         888888<br><br><br><br><br><br>
         9999999<br><br><br><br><br><br>
-        0000000<br><br><br><br><br><br>
+        0000000<br><br><br><br><br><br> -->
       </bank-layout>
     </div>
   </div>
@@ -34,16 +42,20 @@
  *       ④自定义私有工具（统一放在功能模块的utils中）
  */
 import bankLayout from 'src/components/bank_layout';
+import Vcode from 'vue-puzzle-vcode'
 export default {
   name: 'bankLogon', // 组件名（首字母必须大写）
   props: [], // 组件传值所需数据
   // 组件注册
   components: {
     [bankLayout.name]:bankLayout,
+    Vcode
   },
   // 页面所需数据
   data() {
-    return {};
+    return {
+      isShow: false // 控制验证码弹框是否显示
+    };
   },
   // 计算属性
   computed: {},
@@ -55,7 +67,22 @@ export default {
   // DOM加载完毕执行
   mounted() {},
   // 页面用到的方法
-  methods: {}
+  methods: {
+    startVerify() {
+      this.isShow = true // 显示验证码
+    },
+    onSuccess() {
+      // 验证通过时的回调
+      console.log('验证成功')
+      this.isShow = false // 验证成功后需要手动关闭弹框
+      // 这里可以执行后续操作，如表单提交
+    },
+    onClose() {
+      // 用户点击遮罩层关闭弹框时的回调
+      console.log('验证码弹框关闭')
+      this.isShow = false
+    }
+  }
 };
 </script>
 

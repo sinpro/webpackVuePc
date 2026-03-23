@@ -1,4 +1,4 @@
-import  ajax  from "untils/request";
+import  ajax  from "utils/request";
 
 export default {
     /**

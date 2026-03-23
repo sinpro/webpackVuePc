@@ -1,5 +1,5 @@
 const Mock = require('mockjs');
-const { createReturnData } = require('../untils');
+const { createReturnData } = require('../utils');
 export default [
     /*--
      * @author:doujiandong/zhouyu
